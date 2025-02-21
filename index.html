@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="icon" href="images/LOGO.png" type="image/png" style="width: 1000px;">
+    <link rel="stylesheet" href="practise.css">
+</head>
+<body>
+
+    
+
+
+<div class="form-container">
+    <!-- Login Form -->
+    <div class="login" id="loginSection">
+        <h2 style="color: rgb(0, 102, 179);">Login to Your Account</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <div class="input-container">
+            <input type="password" id="password" placeholder="Password" />
+            <img src="images/eye close.png" alt="Toggle Password Visibility" id="eyeIcon" class="eye-icon" />
+        </div>
+        <button id="loginBtn"><b>LOGIN</b></button>
+        <p id="loginError" class="error-msg"></p>
+        <h2 style="color: rgb(0, 102, 179);"><b>New to the page?</b>
+            <button>
+                <a href="#" id="showRegister" style="color: rgb(0, 102, 179);text-decoration: none;"><b>Register Here</b></a>
+            </button>
+        </h2>
+    </div>
+    
+    <!-- Registration Form -->
+    <div class="register" id="registerSection" style="display:none;">
+        <h2>Register</h2>
+        <input type="text" id="registerUsername" placeholder="Your User Name" required>
+        <input type="email" id="registerEmail" placeholder="Your Email" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <button id="registerBtn"><b>REGISTER</b></button>
+        <p id="registerSuccess" class="success-msg"></p>
+        <p id="registerError" class="error-msg"></p>
+        <h2 style="color: rgb(0, 102, 179);"><b>Already have an account?</b>
+            <button>
+                <a href="#" id="showLogin" style="color: rgb(0, 102, 179);"><b>Login Here</b></a>
+            </button>
+        </h2>
+    </div>
+</div>
+
+    <!-- Notes App -->
+    <div id="noteAppSection" style="display:none;">
+        <h1 class="heading">Note App</h1>
+        <p class="info-text">Double Click on a note to remove it</p>
+
+        <label class="dark-mode-label">
+            <input type="checkbox" id="darkModeToggle"> Dark Mode
+        </label>
+
+        <input type="text" id="search" class="search" placeholder="Search notes...">
+
+        <div class="app" id="app">
+            <button class="btn" id="btn" style="align-items: center;">+</button>
+        </div>
+    </div>
+
+    <script src="practise.js"></script>
+</body>
+</html>
